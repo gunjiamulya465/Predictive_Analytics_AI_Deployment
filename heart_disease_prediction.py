@@ -41,3 +41,26 @@ print(X.columns)
 
 print("\nTarget:")
 print(y.name)
+# Split the dataset into training and testing sets
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.20,
+    random_state=42
+)
+
+print("\nTraining data:", X_train.shape)
+print("Testing data:", X_test.shape)
+
+# Logistic Regression Model
+
+logistic_model = LogisticRegression(max_iter=1000)
+
+logistic_model.fit(X_train, y_train)
+
+y_pred_logistic = logistic_model.predict(X_test)
+
+logistic_accuracy = accuracy_score(y_test, y_pred_logistic)
+
+print("\nLogistic Regression Accuracy:",
+      logistic_accuracy)
