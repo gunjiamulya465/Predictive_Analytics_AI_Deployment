@@ -26,3 +26,6 @@ df = df.drop_duplicates()
 
 print("\nDataset shape after removing duplicates:")
 print(df.shape)
+# Display all column names
+print("\nColumns in the dataset:")
+print(df.columns.tolist())
