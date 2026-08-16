@@ -29,3 +29,4 @@ print(df.shape)
 # Display all column names
 print("\nColumns in the dataset:")
 print(df.columns.tolist())
+
