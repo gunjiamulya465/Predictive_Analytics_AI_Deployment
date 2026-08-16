@@ -31,3 +31,13 @@ print("\nColumns in the dataset:")
 print(df.columns.tolist())
 
 sklearn.preprocessing
+# Separate input features and target variable
+
+X = df.drop("target", axis=1)
+y = df["target"]
+
+print("\nInput Features:")
+print(X.columns)
+
+print("\nTarget:")
+print(y.name)
