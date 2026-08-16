@@ -30,3 +30,4 @@ print(df.shape)
 print("\nColumns in the dataset:")
 print(df.columns.tolist())
 
+sklearn.preprocessing
